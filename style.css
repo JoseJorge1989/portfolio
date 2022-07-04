@@ -1,0 +1,196 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+ul li a{
+   text-decoration: none;
+}
+div img{
+   display: block;
+   width: 100%;
+}
+.flex-container{
+   display: flex;
+   max-width: 992px;
+   margin: auto;
+   width: 100%;
+   min-width: 320px;
+   padding: 10px 15px;
+}
+
+header{
+   background-color: #122A57;
+   height: 100px;
+   display: flex;
+   align-items: center;
+   color: #fff;
+}
+header .list-items{
+   display: flex;
+   max-width: 260px;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+.list-items li a{
+   color: #fff;
+}
+
+header .menu{
+   justify-content: space-between;
+}
+
+.apresentacao{
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apresentacao .texto-apresentacao{
+   min-height: 200px;
+}
+.texto-apresentacao h1{
+   color: #122A57;
+   font-size: 48px;
+   margin-bottom: 10px;
+}
+.texto-apresentacao a{
+   background-color:#122A57 ;
+   color: #fff;
+   text-align: center;
+   border-radius: 30px;
+   width: 200px;
+   display: block;
+   text-decoration: none;
+   height: 50px;
+   line-height: 50px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+#sobre{
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: space-between;
+}
+#sobre h2{
+   font-size: 45px;
+   color: #122A57;
+   display: flex;
+   margin-bottom: 20px;
+   justify-content: center;
+}
+
+#sobre p{
+   display: flex;
+   margin-bottom: 15px;
+   width: 90%;
+   justify-content: center;
+}
+#sobre img{
+   min-width: 220px;
+}
+.container-externo{
+   background-color: #C0C0C0;
+   width: 100%;
+}
+
+/*Conhecimentos*/
+#conhecimentos{
+   flex-direction: column;
+   padding-top: 50px;
+   padding-bottom: 100px;
+}
+#conhecimentos h2{
+   font-size: 32px;
+   margin-bottom: 20px;
+}
+.list-conhecimentos{
+   display: flex;
+   justify-content: space-between;
+}
+.list-conhecimentos .item-conhecimento{
+   text-align: center;
+}
+.item-conhecimento p{
+   font-weight: 700;
+   font-size: 20px;
+   margin-top: 20px;
+}
+.item-conhecimento img{
+   width: 80%;
+   margin: auto;
+}
+/*Contato*/
+
+.container-contato{
+   width: 100%;
+}
+#contato{
+   flex-direction: column;
+   padding-top: 50px;
+   padding-bottom: 100px;
+}
+#contato h2{
+   font-size: 32px;
+   margin-bottom: 20px;
+}
+.list-contato{
+   display: flex;
+   justify-content: space-around;
+}
+.list-contato .item-contato{
+   text-align: center;
+}
+
+.item-contato img{
+   width: 80%;
+   margin: auto;
+}
+
+footer{
+   background-color: #122A57;
+   height: 70px;
+   display: flex;
+   align-items: center;
+}
+
+footer .footer{
+   justify-content: space-between;
+   color: #fff;
+}
+
+/*mobile*/
+@media(max-width: 992px){
+   .flex-container{
+      flex-direction: column;
+   }
+   .apresentacao{
+      flex-direction: column-reverse;
+   }
+   .apresentacao .texto-apresentacao{
+      width: 100%;
+   }
+   #sobre{
+      flex-direction: column-reverse;
+   }
+
+   .list-conhecimentos{
+      flex-direction: column;
+   }
+   .item-conhecimento{
+      width: 50%;
+      margin: auto;
+   }
+   .list-contato{
+      flex-direction: column;
+      align-items: flex-start;
+   }
+}
+
